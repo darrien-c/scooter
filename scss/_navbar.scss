@@ -7,6 +7,9 @@ nav {
     background-color: #999999;
     color: white;
     padding: 0 20px;
+    position: absolute;
+    width:100%;
+    z-index: 1;
 
     a {
         text-decoration: none;
