@@ -1,11 +1,14 @@
-// utility imports
-@import 'variables';
+// helpers
+@import 'helpers/variables';
 
 // resets and defaults
-@import 'resets';
-@import 'base';
+@import 'base/resets';
+@import 'base/base';
 
-// site
-@import 'navbar';
-@import 'landing';
-@import 'steps';
+// components
+@import 'components/navbar';
+
+// pages
+@import 'pages/about';
+@import 'pages/index';
+@import 'pages/services'
