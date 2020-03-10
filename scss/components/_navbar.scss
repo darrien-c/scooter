@@ -4,8 +4,9 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #999999;
-    color: white;
+    background-color: #fff;
+    color:$brand-color;
+    box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.363);
     padding: 0 20px;
     position: absolute;
     width:100%;
@@ -13,7 +14,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: white;
+        color:$off-black;
         display: block;
     }
 

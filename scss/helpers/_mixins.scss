@@ -1,0 +1,15 @@
+// parallax scrolling bg
+@mixin parallax-scroll {
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// darken image 
+@mixin darken-image($img) {
+    background:linear-gradient(
+                rgba(0, 0, 0, 0.13), 
+                rgba(0, 0, 0, 0.233)
+                ), $img
+}
