@@ -1,9 +1,21 @@
+
 @import 'resets';
 @import 'base';
 @import 'navbar';
 
-@import 'about-header';
-@import 'about-body';
-@import 'about-article';
-@import 'about-button';
-@import 'about-media-queries';
+// helpers
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+// resets and defaults
+@import 'base/resets';
+@import 'base/base';
+
+// components
+@import 'components/navbar';
+
+// pages
+@import 'pages/about';
+@import 'pages/index';
+@import 'pages/services'
+
