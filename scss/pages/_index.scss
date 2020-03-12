@@ -36,8 +36,18 @@
             margin-bottom: 50px;
         }
         .steps-text {
+            color: $brand-color;
+            opacity: 0.5;
             h5 {
                 margin-bottom: 5px;
+            }
+        }
+        .steps-desc {
+            h3 {
+                color:$brand-color;
+            }
+            p {
+                color: $off-black;
             }
         }
     }
@@ -71,12 +81,16 @@
     @include parallax-scroll;
     height: 250px;
     position: relative;
-
-    button {
+    text-align: center;
+    h2 {
+        color:white;
+        padding-bottom: 15px;
+    }
+    button, h2 {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        bottom: 20px;
+        bottom: 50px;
     }
 }
 
