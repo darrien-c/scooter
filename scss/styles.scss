@@ -1,21 +1,15 @@
-
-@import 'resets';
-@import 'base';
-@import 'navbar';
-
 // helpers
-@import 'helpers/variables';
-@import 'helpers/mixins';
+@import "helpers/variables";
+@import "helpers/mixins";
 
 // resets and defaults
-@import 'base/resets';
-@import 'base/base';
+@import "base/resets";
+@import "base/base";
 
 // components
-@import 'components/navbar';
+@import "components/navbar";
 
 // pages
-@import 'pages/about';
-@import 'pages/index';
-@import 'pages/services';
-
+@import "pages/about";
+@import "pages/index";
+@import "pages/services";
