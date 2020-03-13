@@ -47,6 +47,7 @@
         color: white;
         font-size: 3.5em;
         font-family: "Bellota", sans-serif;
+        text-shadow: 3px 3px 2px $off-grey;
     }
 
     sup {
@@ -76,6 +77,7 @@
 }
 
 .sign-up-btn {
+    padding: 0;
     border: none;
     background-color: #fff;
     width: 70%;
