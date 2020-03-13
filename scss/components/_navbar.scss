@@ -5,7 +5,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color:#121212;
-    color:$brand-color;
+    color:white;
     box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.363);
     padding:10px 20px;
     position: absolute;
@@ -63,6 +63,25 @@ nav {
         }
         a {
             color:white;
+            position: relative;
+            //https://codepen.io/jstn/pen/zuDst
+            &:after {    
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: #fff;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+              }
+              &:hover:after { 
+                width: 100%; 
+                left: 0; 
+              }
         }
+
     }
 }

@@ -9,6 +9,7 @@
 .intro {
     text-align: center;
     margin: 10px;
+    margin-top: 50px;
 }
 
 .ride-steps-section {
@@ -64,10 +65,11 @@
             border-radius: 50%;
             width: 15vw;
             height: 15vw;
-            text-align: center;
+            margin: auto;
+            
             img {
-                width: 10vw;
-                height: 10vw;
+                width: 8vw;
+                height: 8vw;
                 position:absolute;
                 top:50%; 
                 left:50%;
@@ -116,7 +118,7 @@
         text-shadow: 2px 2px 8px rgb(0, 0, 0);
         padding-bottom: 5px;
         width: 95%;
-        bottom: 40px;
+        bottom: 65px;
         font-size: 2em;
     }
     button, h2 {
@@ -132,6 +134,7 @@
 
 @media (min-width: $tabletBreakpoint){
     .ride-steps-section {
+        margin-top: 70px;
         .section-steps {
             .steps{
                article{
@@ -140,21 +143,28 @@
                 grid-template-rows: auto;
                 padding: 0 8vw;
                 max-width: 1200px;
+                &:nth-child(-n + 2){
+                    margin-bottom: 0;
+                }
                 .steps-text{
                     grid-column: 2;
                     grid-row: 1;
                     justify-self: center;
+                    text-align: center;
                 }
                 .steps-desc {
                     grid-column: 1 ;
                     grid-row: 1;
                     margin: auto;
+                    width: 80%;
                 }
                 .steps-img {
                     display: block;
                     grid-column: 3;
                     grid-row: 1;
                     justify-self: center;
+                    width: 18vw;
+            height: 18vw;
                 }
             } 
                 .step-two{
@@ -172,23 +182,24 @@
             }
             .dots.dots.desktop{
                 display: block;
+                .dot {
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
-    
-    // .dots.desktop {
-    //     display: block;
-    // }
 }
 
 @media (min-width: $desktopBreakpoint){
     .title-page, .sign-up {
         background-attachment: fixed;
     }
-    // .title-page {
-    //     @include darken-image(url('../images/marat-mazitov-WzStSnhZbfs-unsplash.jpg'));
-    // }
     .ride-steps-section .section-steps .steps article {
         padding: 0;
+        .steps-img{
+            width: 13vw;
+            height: 13vw;
+        }
     }
 }
