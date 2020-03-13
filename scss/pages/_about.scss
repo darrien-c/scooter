@@ -38,7 +38,9 @@
 
 // Body
 .wrapper {
-    max-width: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 main {
     background-color: rgb(134, 178, 235);
@@ -138,32 +140,7 @@ article {
     padding: 50px 20px;
 }
 
-// Footer 
-.footer-container {
-    text-align: center;
-    padding: 65px;
 
-    .underbar {
-        margin-top: 10px;
-    }
-
-    .underbar::after {
-        border-bottom-width: 0.1px;
-        border-color: rgb(0, 175, 133);
-        content: "";
-        width: 80%;
-        position: absolute;
-        border-style: solid;
-        z-index: 1;
-        margin: 0 auto;
-        right: 0;
-        left: 0;
-    }
-
-    p {
-        margin-top: 50px;
-    }
-}
 
 
 // Button

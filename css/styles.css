@@ -108,8 +108,105 @@ nav ul li {
   }
 }
 
-footer {
-  background-color: black;
+.footer-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #2C2C2C;
+  margin: 0 auto;
+  padding-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-container h3 {
+  text-align: center;
+  color: white;
+}
+
+.footer-container .underbar {
+  margin-top: 10px;
+}
+
+.footer-container .underbar::after {
+  border-bottom-width: 0.1px;
+  border-color: #00af85;
+  content: "";
+  width: 80%;
+  position: absolute;
+  border-style: solid;
+  z-index: 1;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+
+.footer-container p {
+  margin-top: 50px;
+}
+
+.footer-list {
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 20px;
+  margin-bottom: 50px;
+}
+
+.footer-list ul {
+  text-align: left;
+  list-style: none;
+}
+
+.footer-list ul li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  line-height: 2.2;
+}
+
+.contact-list {
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.contact-list h3 {
+  text-align: center;
+}
+
+.contact-list ul {
+  list-style: none;
+}
+
+.contact-list ul li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.contact-list ul i {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 25px;
+}
+
+.social-icons {
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  padding: 10px;
 }
 
 .header-container {
@@ -149,7 +246,9 @@ footer {
 }
 
 .wrapper {
-  max-width: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 main {
@@ -245,32 +344,6 @@ article article img {
   text-align: center;
   color: #444444;
   padding: 50px 20px;
-}
-
-.footer-container {
-  text-align: center;
-  padding: 65px;
-}
-
-.footer-container .underbar {
-  margin-top: 10px;
-}
-
-.footer-container .underbar::after {
-  border-bottom-width: 0.1px;
-  border-color: #00af85;
-  content: "";
-  width: 80%;
-  position: absolute;
-  border-style: solid;
-  z-index: 1;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-}
-
-.footer-container p {
-  margin-top: 50px;
 }
 
 .join-btn {
