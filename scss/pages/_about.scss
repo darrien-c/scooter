@@ -2,12 +2,13 @@
 .header-container {
     display: block;
     position: relative;
-    height: 50vh;
-    top: 0;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../about-images/black-scooter-2380611.jpg');
-	background-size: cover;
-	background-attachment: fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../about-images/e-scooter-stairs.jpg');
+    height: 440px;
+    background-size: cover;
+    background-position: 100% -450px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     
 
     .nav-bar {
@@ -36,18 +37,27 @@
 
 
 // Body
-
-// main {
-//     background-color: rgb(134, 178, 235);
-// }
+.wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+main {
+    background-color: rgb(134, 178, 235);
+}
 
 .container{
-    // display: grid;
     // margin: 0 5% 0% 5%;
     padding: 0;
 }
 
 // Article
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .container h3 {
     font-size: 1.6em;
     text-align: center;
@@ -70,6 +80,10 @@ article {
     article img {
         margin-top: 3em;
     }
+}
+
+.article-01 {
+    grid-column: 1/2;
 }
 
 .article-01,
@@ -127,31 +141,6 @@ article {
 }
 
 
-.footer-container {
-    text-align: center;
-    padding: 65px;
-
-    .underbar {
-        margin-top: 10px;
-    }
-
-    .underbar::after {
-        border-bottom-width: 0.1px;
-        border-color: rgb(0, 175, 133);
-        content: "";
-        width: 80%;
-        position: absolute;
-        border-style: solid;
-        z-index: 1;
-        margin: 0 auto;
-        right: 0;
-        left: 0;
-    }
-
-    p {
-        margin-top: 50px;
-    }
-}
 
 
 // Button
