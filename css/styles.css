@@ -271,13 +271,13 @@ nav ul li {
           filter: brightness(50%);
 }
 
-.wrapper {
+.about-wrapper {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-.container {
+.about-container {
   padding: 0;
 }
 
