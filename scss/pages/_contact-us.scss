@@ -1,0 +1,75 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 3em;
+    max-width: 800px;
+    margin: 0 auto;
+    .form-input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 2em;
+        margin-top: 1.5em;
+        input[type="text"],
+        textarea,
+        select {
+            font-size: 1.4em;
+            width: 100%;
+            border: 1px solid $off-grey;
+            border-radius: 10px;
+            padding: 0.4em 0 0.4em 0.2em;
+            font-family: "Montserrat", sans-serif;
+        }
+        input[type="text"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: $brand-color;
+        }
+        label {
+            font-family: "Bellota", sans-serif;
+            font-size: 1.8em;
+            color: $brand-color;
+        }
+        .radio-options,
+        .checkbox-options {
+            display: flex;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.2em;
+        }
+        .radio-option,
+        .checkbox-option {
+            margin-right: 2em;
+            margin-left: 0.2em;
+        }
+    }
+    .message {
+        margin-bottom: 2em;
+    }
+    .submit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        input {
+            width: 70%;
+            background-color: #fff;
+            border: 2px solid $brand-color;
+            border-radius: 25px;
+            color: $brand-color;
+            font-family: "Bellota", sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1em 0;
+            cursor: pointer;
+            text-align: center;
+        }
+        input:hover {
+            background-color: $brand-color;
+            color: white;
+            transition: 0.15s ease-in;
+        }
+    }
+}

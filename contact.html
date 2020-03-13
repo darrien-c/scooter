@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Bellota:400,700|Montserrat:400,500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <h2>Ultracheese</h2>
+                    <div id="burger-icon" class="burger-icon">&#9776;</div>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#0">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="page-header">
+                    <h1>Contact Us</h1>
+                </div>
+                <form action="" class="contact-form">
+                    <div class="form-input">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" />
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="text" />
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" />
+                    </div>
+                    <div class="form-input">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject">
+                            <option value="inquiry">Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Complaint</option>
+                        </select>
+                    </div>
+                    <div class="form-input radio">
+                        <label for="x">Radio</label>
+                        <div class="radio-options">
+                            <input type="radio" name="x" id="a" />
+                            <span class="radio-option">Option 1</span>
+                            <input type="radio" name="x" id="b" />
+                            <span class="radio-option">Option 2</span>
+                        </div>
+                    </div>
+                    <div class="form-input checkbox">
+                        <label for="y">Checkbox</label>
+                        <div class="checkbox-options">
+                            <input type="checkbox" name="y" id="c" />
+                            <span class="checkbox-option">Option</span>
+                            <input type="checkbox" name="y" id="d" />
+                            <span class="checkbox-option">Option</span>
+                            <input type="checkbox" name="y" id="e" />
+                            <span class="checkbox-option">Option</span>
+                        </div>
+                    </div>
+                    <div class="form-input message">
+                        <label for="message">Message</label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </main>
+            <footer></footer>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
