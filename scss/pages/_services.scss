@@ -1,12 +1,14 @@
 .page-header {
-    padding-top: 120px;
+    padding-top: 140px;
     background-color: #fff;
     text-align: center;
     h1 {
         margin-bottom: 0;
         font-family: "Bellota", sans-serif;
-        font-size: 3.5em;
-        color: scale-color($color: $brand-color, $lightness: -70%);
+        font-size: 3em;
+        // color: scale-color($color: $brand-color, $lightness: -70%);
+        color: $off-grey;
+        font-weight: 400;
     }
 }
 
@@ -15,7 +17,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .services-description,
@@ -122,5 +124,10 @@
 @media (min-width: 1400px) {
     .plan {
         width: 30%;
+    }
+    .page-header,
+    .plans,
+    .plan {
+        background-color: #fafafa !important;
     }
 }
