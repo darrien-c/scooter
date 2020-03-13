@@ -36,7 +36,9 @@
 
 
 // Body
-
+.wrapper {
+    max-width: none;
+}
 main {
     background-color: rgb(134, 178, 235);
 }

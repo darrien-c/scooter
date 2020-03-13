@@ -1,0 +1,472 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+.wrapper {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+nav {
+  line-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  color: #00A57D;
+  -webkit-box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.363);
+          box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.363);
+  padding: 10px 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+nav h2 {
+  margin-bottom: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2b2b2b;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.show nav ul {
+  display: block;
+}
+
+nav ul li {
+  font-size: 1.5em;
+}
+
+.burger-icon {
+  cursor: pointer;
+  font-size: 1.6em;
+}
+
+@media (min-width: 960px) {
+  .burger-icon {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  nav h2 {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+.header-container {
+  display: block;
+  position: relative;
+  height: 50vh;
+  top: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../about-images/black-scooter-2380611.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../about-images/black-scooter-2380611.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header-container .nav-bar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header-container h1 {
+  color: white;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.header-container .header-image {
+  top: 0;
+  width: 100%;
+  display: block;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.wrapper {
+  max-width: none;
+}
+
+main {
+  background-color: #86b2eb;
+}
+
+.container {
+  padding: 0;
+}
+
+.container h3 {
+  font-size: 1.6em;
+  text-align: center;
+  padding: 4em 0;
+  margin: 0;
+}
+
+article {
+  margin-bottom: 2em;
+  text-align: center;
+  position: relative;
+}
+
+article article h4 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+article article img {
+  margin-top: 3em;
+}
+
+.article-01,
+.article-text-01 {
+  margin: 0 5% 0 5%;
+}
+
+.article-text-01,
+.article-text-02 {
+  text-align: left;
+  display: block;
+  margin-bottom: 5em;
+}
+
+.article-02,
+.article-text-02 {
+  margin: 0 5% 0 5%;
+}
+
+.article-02-bg {
+  padding-top: 50px;
+  padding-bottom: 8em;
+  width: 100%;
+  background-color: #9171c5;
+}
+
+.article-text-02 {
+  position: relative;
+}
+
+.article-info-02 {
+  position: absolute;
+  margin-top: -7em;
+}
+
+.article-03 .profile {
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+.article-03 .profile img {
+  width: 50%;
+}
+
+.article-04 {
+  margin-top: 7em;
+  background-color: rgba(163, 163, 163, 0.931);
+  width: 100%;
+  text-align: center;
+  color: #444444;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 65px;
+}
+
+.footer-container .underbar {
+  margin-top: 10px;
+}
+
+.footer-container .underbar::after {
+  border-bottom-width: 0.1px;
+  border-color: #00af85;
+  content: "";
+  width: 80%;
+  position: absolute;
+  border-style: solid;
+  z-index: 1;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+
+.footer-container p {
+  margin-top: 50px;
+}
+
+.join-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 4px;
+  border: 3px solid #00B68A;
+  color: #00B68A;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 24px 24px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.join-btn a {
+  color: #00B68A;
+}
+
+.join-btn:hover {
+  background-color: #00B68A;
+  color: white;
+}
+
+.join-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.title-page {
+  height: 100vh;
+  background-image: url("../images/marat-mazitov-WzStSnhZbfs-unsplash.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+
+.intro {
+  text-align: center;
+  margin: 10px;
+}
+
+.ride-steps-section {
+  margin: 30px 0;
+}
+
+.ride-steps-section .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ride-steps-section .section-title h2 {
+  margin-bottom: 10px;
+}
+
+.ride-steps-section .section-title hr {
+  width: 70px;
+  border: 2px solid #00A57D;
+}
+
+.ride-steps-section .section-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ride-steps-section .ride-steps article:nth-child(-n + 2) {
+  margin-bottom: 50px;
+}
+
+.ride-steps-section .ride-steps .steps-text {
+  color: #00A57D;
+  opacity: 0.5;
+}
+
+.ride-steps-section .ride-steps .steps-text h5 {
+  margin-bottom: 5px;
+}
+
+.ride-steps-section .ride-steps .steps-desc h3 {
+  color: #00A57D;
+}
+
+.ride-steps-section .ride-steps .steps-desc p {
+  color: #2b2b2b;
+}
+
+.ride-steps-section .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px;
+  padding-bottom: 0;
+}
+
+.ride-steps-section .dots .dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: block;
+}
+
+.ride-steps-section .dots .dot:nth-last-child(-n+3) {
+  opacity: 0;
+}
+
+.ride-steps-section .dots .bold {
+  height: 7px;
+  width: 7px;
+  background-color: black;
+}
+
+.sign-up {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.233))), url("../../images/Canva - Black Scooter.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.233)), url("../../images/Canva - Black Scooter.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  text-align: center;
+}
+
+.sign-up h2 {
+  color: white;
+  padding-bottom: 15px;
+}
+
+.sign-up button, .sign-up h2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: 50px;
+}
+
+@media (min-width: 1250px) {
+  .title-page, .sign-up {
+    background-attachment: fixed;
+  }
+}
+
+.plans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-description,
+.plan {
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.plan {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 36px;
+}
+
+.plan-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #474747;
+}
+
+.plan-cost h2, .plan-cost p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.plan-details h2, .plan-details p {
+  margin: 24px 0;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */
