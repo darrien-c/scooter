@@ -100,7 +100,7 @@
 .plan:nth-child(even) {
     background-color: #fafafa;
     .sign-up-btn {
-        background-color: #fafafa !important;
+        background-color: #fafafa;
     }
 }
 
@@ -110,9 +110,10 @@
         padding-left: 1em;
         padding-right: 1em;
         background-color: #fff !important;
-    }
-    .sign-up-btn {
-        width: fit-content;
+        .sign-up-btn {
+            width: fit-content;
+            background-color: #fff !important;
+        }
     }
 }
 
