@@ -108,16 +108,21 @@ nav ul li {
   }
 }
 
+footer {
+  background-color: black;
+}
+
 .header-container {
   display: block;
   position: relative;
-  height: 50vh;
-  top: 0;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../about-images/black-scooter-2380611.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../about-images/black-scooter-2380611.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../about-images/e-scooter-stairs.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../about-images/e-scooter-stairs.jpg");
+  height: 440px;
   background-size: cover;
+  background-position: 100% -450px;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .header-container .nav-bar {
@@ -155,6 +160,14 @@ main {
   padding: 0;
 }
 
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .container h3 {
   font-size: 1.6em;
   text-align: center;
@@ -175,6 +188,12 @@ article article h4 {
 
 article article img {
   margin-top: 3em;
+}
+
+.article-01 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
 }
 
 .article-01,
