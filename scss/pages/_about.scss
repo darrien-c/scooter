@@ -179,16 +179,18 @@ font-family: 'Rubik', sans-serif;
     width: 100%;
     text-align: center;
     color: rgb(68, 68, 68);
-
-    padding-bottom: 45px;
+    padding-top: 6em;
+    padding-bottom: 7em;
 
     h3 {
         font-weight: 300;
+        font-size: 42px;
         color: white;
         padding: 55px;
     }
 
     h4 {
+        font-size: 22px;
         padding: 0;
         margin: 0;
         margin-bottom: 5px;
@@ -224,14 +226,16 @@ font-family: 'Rubik', sans-serif;
 
 .join-btn {
     display: block;
+    position: relative;
+    box-shadow: 0 0 1px transparent;
 	margin: 0 auto;
 	margin-top: 50px;
     text-align: center;
     border-radius:4px;
-    background-color: rgba(0, 182, 109, 0.445);
+    background-color: rgba(0, 182, 109, 0.739);
     color: white;
 	cursor: pointer;
-	font-size:15px;
+	font-size:16px;
 	font-weight:300;
 	padding:15px 24px;
 	text-decoration:none;
@@ -242,16 +246,36 @@ font-family: 'Rubik', sans-serif;
     color: white;
 }
 
-.join-btn:hover{
+/* .join-btn:hover{
 	background-color:rgba(0, 182, 109, 0.356);
 	color: white;
-}
+} */
 
 
 .join-btn:active {
 	position:relative;
 	top:1px;
 }
+
+.join-btn:before {
+    content: '';
+    position: absolute;
+    border: rgba(0, 182, 109, 0.411) solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: .3s;
+    transition-property: top right bottom left;
+  }
+
+  .join-btn:hover:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+  }
+  
 
 @media(min-width: 750px) {
     .article-01-container {
