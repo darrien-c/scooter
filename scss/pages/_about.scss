@@ -156,7 +156,7 @@ font-family: 'Rubik', sans-serif;
 
     p {
         font-weight: 300;
-        padding-bottom: 5.5rem;
+        padding-bottom: 6.5rem;
         padding-left: 1.25rem;
         padding-right: 1.25rem; 
        
@@ -313,20 +313,20 @@ font-family: 'Rubik', sans-serif;
         margin-bottom: 4px;
         width: 95%;
         position: relative;
+        
 
         h3 {
             margin-top: 0;
             margin-left:0.51rem;
-    
-
         }
 
         p {
-            padding: 20px;
+            margin-top:-1.51rem;
             position: absolute;
             top: 35%;
             left: 3%;
             transform: translate(0, 50%);
+            font-size: 15px;
         }
     }
 
@@ -363,6 +363,7 @@ font-family: 'Rubik', sans-serif;
             p {
                 width: 580px;
                 color: black;
+                font-size: 18px;
             }
 
     }
@@ -370,9 +371,12 @@ font-family: 'Rubik', sans-serif;
     .article-text-02 {
 
         h3 {
-            margin-top: 0;
+            margin-top: 3rem;
             margin-left:1rem;
+        }
 
+        p {
+            font-size: 16px;
         }
     }
 
