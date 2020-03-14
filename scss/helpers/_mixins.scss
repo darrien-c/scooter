@@ -9,7 +9,7 @@
 // darken image 
 @mixin darken-image($img) {
     background:linear-gradient(
-                rgba(0, 0, 0, 0.63), 
+                rgba(0, 0, 0, 0.73), 
                 rgba(0, 0, 0, 0.33)
                 ), $img
 }
