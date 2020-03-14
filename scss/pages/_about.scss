@@ -350,7 +350,6 @@ font-family: 'Rubik', sans-serif;
     .article-01-container {
         img {
             margin-left: 5px;
-            max-width: 590px;
         }
 
             p {
@@ -364,12 +363,14 @@ font-family: 'Rubik', sans-serif;
     .article-text-02 {
 
         h3 {
-            margin-top: 3rem;
+            margin-top: 5rem;
             margin-left:1rem;
         }
 
         p {
-            font-size: 16px;
+            font-size: 18px;
+            margin-top: 0.5rem;
+            padding-right: 2.7rem; 
         }
     }
 
