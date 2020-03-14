@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap');
+
+/* Font Family:
+font-family: 'Rubik', sans-serif;
+300,400,500,700
+ */
 // Header
+
 .header-container {
     display: block;
     position: relative;
@@ -17,6 +24,10 @@
 
   
     h1{
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
         color: rgb(255, 255, 255);
         margin: 0 auto;
         position: absolute;
@@ -24,6 +35,7 @@
         top: 60%;
         transform: translate(-50%, -50%);
         z-index: 1;
+        font-size: 3em;
     }
 
     .header-image {
@@ -41,90 +53,182 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    font-family: 'Rubik', sans-serif;
 }
 
 .about-container{
-    // margin: 0 5% 0% 5%;
     padding: 0;
 }
 
-// Article
+
+// Articles
 
 .content-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.container h3 {
-    font-size: 1.6em;
-    text-align: center;
-    padding: 4em 0;
-    margin: 0;
+
+
+.about-container {
+    
+    h3 {
+        font-size: 1.6em;
+        font-weight: 500;
+        text-align: center;
+        padding: 4em 0;
+        margin: 0;
+        color: #00BE86;
+    }
 }
 
 
+.article-01-container {
+    height: 100%;
 
-
-.article-01 {
-    grid-column: 1/2;
+    img {
+        width: 100%;
+    }
 }
 
-.article-01,
 .article-text-01 {
-    margin: 0 5% 0 5%;
+    background-color: rgb(6, 6, 8);
+    margin-top: -5px;
+    p {       
+        color: white;
+        margin: 0;
+        font-weight: 300;
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; 
+       
+    }
 }
+
+
+
 
 .article-text-01,
 .article-text-02  {
     text-align: left;
     display: block;
-    margin-bottom: 5em;
+
 }
 
-.article-02,
-.article-text-02 {
-    margin: 0 5% 0 5%;
-}
+ 
 
 .article-02-bg{
-    padding-top: 50px;
-    padding-bottom: 8em;
     width: 100%;
-    background-color: rgb(145, 113, 197);
+}
+
+.article-02 {
+    margin: 0;
+    padding: 0;
+    
+    img {
+        width: 100%;
+    }
 }
 
 .article-text-02 {
-    position: relative;
+    background-color: #00B68A;
+    width: 100%;
+    color: white;
+    margin-top: -5px;
+
+    h3 {
+        color: white;
+        line-height: 2.5rem;
+        text-align: left;
+        padding-top: 5.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    p {
+        font-weight: 300;
+        padding-bottom: 6.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; 
+       
+    }
 }
 
-.article-info-02 {
-    position:absolute;
-    margin-top: -7em;
-}
+
+// --- Team profiles ---- 
 
 .article-03 {
 
     .profile {
+        text-align: center;
         margin-top: 3em;
-        margin-bottom: 5em;
+        margin-bottom: 6em;
     }
 
     .profile img {
        width:  50%;
     }
+
+    h4 {
+        text-align: center;
+        padding: 20px;
+        font-weight: 400;
+    }
 }
 
 .article-04 {
     margin-top: 7em;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.671) ), url('/about-images/e-scooter_street.jpg');
     background-color: rgba(163, 163, 163, 0.931);
+    background-position: 0 76%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     text-align: center;
     color: rgb(68, 68, 68);
-    padding: 50px 20px;
+
+    padding-bottom: 45px;
+
+    h3 {
+        font-weight: 300;
+        color: white;
+        padding: 55px;
+    }
+
+    h4 {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 300;
+        color: white;
+    }
 }
 
 
+//Underline
+.underbar {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+}
+
+.underbar::after {
+    border-bottom-width: 0.1px;
+    border-color: rgb(0, 175, 133);
+    content: "";
+    width: 80%;
+    position: absolute;
+    border-style: solid ;
+    z-index: 1;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
 
 // Button
 
@@ -133,23 +237,23 @@
 	margin: 0 auto;
 	margin-top: 50px;
     text-align: center;
-	border-radius:4px;
-	border:3px solid #00B68A;
-	color:#00B68A;
+    border-radius:4px;
+    background-color: rgba(0, 182, 109, 0.445);
+    color: white;
 	cursor: pointer;
 	font-size:15px;
-	font-weight:bold;
-	padding:24px 24px;
+	font-weight:300;
+	padding:15px 24px;
 	text-decoration:none;
-	width: 200px;
+    width: 200px;
 }
 
 .join-btn a{
-    color: #00B68A;
+    color: white;
 }
 
 .join-btn:hover{
-	background-color:#00B68A;
+	background-color:rgba(0, 182, 109, 0.356);
 	color: white;
 }
 
@@ -158,3 +262,116 @@
 	position:relative;
 	top:1px;
 }
+
+@media(min-width: 750px) {
+    .article-01-container {
+        display: flex;     
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;  
+        margin-bottom: 6em;   
+
+        img {
+            margin-left: 10px;
+            max-width: 570px;
+        }
+
+
+        .article-text-01 {
+            background-color: transparent;
+            margin-left: 50px;
+            
+
+            p {
+                max-width: 565px;
+                color: black;
+            }
+        }
+    }
+  
+    .article-02-bg {
+        display:flex;
+        flex-direction: row-reverse;
+        background-color: transparent;
+        justify-content: center;
+        width: 100%;   
+        margin-top: 50px;
+     }
+
+     .article-text-02 {
+        background-color: #00B68A;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+        width: 95%;
+        position: relative;
+        
+
+        h3 {
+            margin-top: -1.5rem;
+            margin-left:0.51rem;
+        }
+
+        p {
+            margin-top:-1.8rem;
+            position: absolute;
+            top: 35%;
+            left: 3%;
+            transform: translate(0, 50%);
+            font-size: 15px;
+        }
+    }
+
+     .article-02 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+       
+        img {
+            object-fit: fill;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+    .profile-container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media (min-width: 950px) {
+
+ 
+    .article-01-container {
+        img {
+            margin-left: 5px;
+        }
+
+            p {
+                width: 580px;
+                color: black;
+                font-size: 18px;
+            }
+
+    }
+
+    .article-text-02 {
+
+        h3 {
+            margin-top: 5rem;
+            margin-left:1rem;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 0.5rem;
+            padding-right: 2.7rem; 
+        }
+    }
+
+ }
