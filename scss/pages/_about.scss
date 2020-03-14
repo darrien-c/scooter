@@ -66,7 +66,8 @@ font-family: 'Rubik', sans-serif;
         font-size: 1.6em;
         font-weight: 500;
         text-align: center;
-        padding: 4em 0;
+        padding-top: 4em;
+        padding-bottom: 3em;
         margin: 0;
         color: #00BE86;
     }
@@ -150,15 +151,19 @@ font-family: 'Rubik', sans-serif;
 // --- Team profiles ---- 
 
 .article-03 {
-
+padding-bottom: 2em;
     .profile {
         text-align: center;
         margin-top: 3em;
-        margin-bottom: 6em;
+        margin-bottom: 6.5em;
     }
 
     .profile img {
        width:  50%;
+    }
+
+    h3 {
+        font-size: 36px;
     }
 
     h4 {
@@ -278,6 +283,7 @@ font-family: 'Rubik', sans-serif;
   
 
 @media(min-width: 750px) {
+
     .article-01-container {
         display: flex;     
         justify-content: center;
@@ -355,6 +361,10 @@ font-family: 'Rubik', sans-serif;
         justify-content: center;
     }
 
+    .article-03 h3 {
+        padding-bottom: 2em;
+    }
+
 }
 
 
@@ -377,13 +387,13 @@ font-family: 'Rubik', sans-serif;
     .article-text-02 {
 
         h3 {
-            margin-top: 5rem;
+            margin-top: 1rem;
             margin-left:1rem;
         }
 
         p {
             font-size: 18px;
-            margin-top: 0.5rem;
+            margin-top: -2rem;
             padding-right: 2.7rem; 
         }
     }
