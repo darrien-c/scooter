@@ -61,7 +61,8 @@ font-family: 'Rubik', sans-serif;
     padding: 0;
 }
 
-// Article
+
+// Articles
 
 .content-container {
     display: flex;
@@ -83,47 +84,83 @@ font-family: 'Rubik', sans-serif;
 }
 
 
+.article-01-container {
+    height: 100%;
+
+    img {
+        width: 100%;
+    }
+}
 
 .article-text-01 {
-    padding-top: 20px;
+    background-color: rgb(6, 6, 8);
+    margin-top: -5px;
+    p {       
+        color: white;
+        margin: 0;
+        font-weight: 300;
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; 
+       
+    }
 }
 
 
 .article-01,
 .article-text-01 {
-    margin: 0 5% 0 5%;
+  /*   margin: 0 5% 0 5%; */
 }
 
 .article-text-01,
 .article-text-02  {
     text-align: left;
     display: block;
-    margin-bottom: 5em;
+
 }
 
-.article-02,
+/* .article-02,
 .article-text-02 {
     margin: 0 5% 0 5%;
-}
+} */
 
 .article-02-bg{
-    background-color: #00B68A;
-    padding-top: 50px;
     width: 100%;
 }
 
-.article-text-02 {
+.article-02 {
+    margin: 0;
     padding: 0;
-    margin: 0 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-    position: relative;
+    
+    img {
+        width: 100%;
+    }
 }
 
-.article-info-02 {
-    position:absolute;
-    margin-top: -7em;
+.article-text-02 {
+    background-color: #00B68A;
+    width: 100%;
+    color: white;
+    margin-top: -5px;
+
+    h3 {
+        color: white;
+        line-height: 2.5rem;
+        text-align: left;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    p {
+        font-weight: 300;
+        padding-bottom: 2.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem; 
+       
+    }
 }
 
 
@@ -223,7 +260,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 .join-btn:hover{
-	background-color:#00B68A;
+	background-color:rgba(0, 182, 109, 0.356);
 	color: white;
 }
 
@@ -233,6 +270,9 @@ font-family: 'Rubik', sans-serif;
 	top:1px;
 }
 
+@media(min-width: 750px) {
+
+}
 @media (min-width: 950px) {
 
     .article-01-container {
@@ -242,6 +282,14 @@ font-family: 'Rubik', sans-serif;
         align-items: center;
         margin: 0 auto;
         margin-bottom: 30px;
+
+        .article-text-01 {
+            background-color: transparent;
+
+            p {
+                color: black;
+            }
+        }
     }
   
     .article-02-bg {
@@ -285,5 +333,6 @@ font-family: 'Rubik', sans-serif;
 
     .profile-container {
         display: flex;
+        justify-content: center;
     }
  }
