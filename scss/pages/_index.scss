@@ -7,16 +7,17 @@
 
     .title-header {
         position: absolute;
-        bottom: 30%;
+        bottom: 35%;
         color: white;
-        left:10%;
+        left:5%;
         text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.397);
 
-        h2 {
-            font-size: 2vw;
+        p {
+            font-size: 5vw;
         }
-        h1 {
-            font-size: 4vw;
+        h2 {
+            font-size: 10vw;
+            font-weight: 500;
         }
     }
 }
@@ -25,6 +26,9 @@
     text-align: center;
     margin: 10px;
     margin-top: 30px;
+    p {
+        font-size: 18px;
+    }
 }
 
 .ride-steps-section {
@@ -128,16 +132,17 @@
     height: 250px;
     position: relative;
     text-align: center;
-    h2 {
+    h3 {
         color:rgb(255, 255, 255);
         text-shadow: 2px 2px 8px rgb(0, 0, 0);
         padding-bottom: 5px;
         margin-bottom: 0;
         width: 95%;
         bottom: 65px;
-        font-size: 2em;
+        font-size: 1.5em;
+        font-weight: 500;
     }
-    button, h2 {
+    button, h3 {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -153,8 +158,17 @@
         max-width: 700px;
         margin: 30px auto;
     }
-    .sign-up{
+    .title-page .title-header {
+        max-width: 600px;
+        p {
+            font-size: 3vw;
+        }
         h2 {
+            font-size: 7vw;
+        }
+    }
+    .sign-up{
+        h3 {
             bottom: 100px;
         }
         button {
@@ -222,6 +236,16 @@
 @media (min-width: $desktopBreakpoint){
     .title-page, .sign-up {
         background-attachment: fixed;
+    }
+    .title-page .title-header {
+        max-width: 500px;
+        p {
+            font-size: 1.5vw;
+        }
+        h2 {
+            font-size: 3vw;
+            font-weight: 500;
+        }
     }
     .ride-steps-section {
         margin-bottom: 100px;
