@@ -36,8 +36,8 @@
 
 .plan-cost {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 250px;
     width: 250px;
     border-radius: 50%;
@@ -50,10 +50,13 @@
         font-size: 3.5em;
         font-family: "Bellota", sans-serif;
         text-shadow: 3px 3px 2px $off-grey;
+        display: flex;
+        justify-content: center;
     }
 
     sup {
         font-size: 0.5em;
+        margin-top: -0.5em;
     }
 }
 
@@ -95,6 +98,11 @@
         padding: 1em 2em;
         background-color: white;
         cursor: pointer;
+    }
+    a:hover {
+        background-color: $brand-color;
+        color: #eee;
+        transition: 0.08s ease-in;
     }
 }
 .sign-up-btn:nth-child(even) {
