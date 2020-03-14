@@ -67,9 +67,10 @@ font-family: 'Rubik', sans-serif;
         font-weight: 500;
         text-align: center;
         padding-top: 4em;
-        padding-bottom: 3em;
+        padding-bottom: 2em;
         margin: 0;
         color: #00BE86;
+
     }
 }
 
@@ -170,6 +171,7 @@ padding-bottom: 2em;
         text-align: center;
         padding: 20px;
         font-weight: 400;
+        font-size: 18px;
     }
 }
 
@@ -207,18 +209,15 @@ padding-bottom: 2em;
 
 //Underline
 .underbar {
-    margin-top: 5em;
-    margin-bottom: 5em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+    margin-top: -60px;
+    padding-bottom: 70px;
 }
 
 .underbar::after {
     border-bottom-width: 0.1px;
-    border-color: rgb(0, 175, 133);
+    border-color: rgba(0, 175, 134, 0.465);
     content: "";
-    width: 80%;
+    width: 80px;
     position: absolute;
     border-style: solid ;
     z-index: 1;
