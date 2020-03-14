@@ -30,7 +30,7 @@ font-family: 'Rubik', sans-serif;
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        font-size: 3em;
+        font-size: 48px;
     }
 
   
@@ -66,11 +66,10 @@ font-family: 'Rubik', sans-serif;
         font-size: 36px;
         font-weight: 500;
         text-align: center;
-        padding-top: 4em;
-        padding-bottom: 2em;
+        padding-top: 64px;
+        padding-bottom: 64px;
         margin: 0;
         color: #00BE86;
-
     }
 }
 
@@ -86,15 +85,15 @@ font-family: 'Rubik', sans-serif;
 .article-text-01 {
     background-color: rgb(6, 6, 8);
     margin-top: -5px;
+
     p {       
         color: white;
         margin: 0;
         font-weight: 300;
-        padding-top: 5.5rem;
-        padding-bottom: 5.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem; 
-       
+        padding-top: 88px;
+        padding-bottom: 88px;
+        padding-left: 20px;
+        padding-right: 20px; 
     }
 }
 
@@ -105,7 +104,6 @@ font-family: 'Rubik', sans-serif;
 .article-text-02  {
     text-align: left;
     display: block;
-
 }
 
  
@@ -131,20 +129,19 @@ font-family: 'Rubik', sans-serif;
 
     h3 {
         color: white;
-        line-height: 2.5rem;
+        line-height: 40px;
         text-align: left;
-        padding-top: 5.5rem;
-        padding-bottom: 2.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-top: 88px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     p {
         font-weight: 300;
-        padding-bottom: 6.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem; 
-       
+        padding-bottom: 104px;
+        padding-left: 20px;
+        padding-right: 20px; 
     }
 }
 
@@ -152,11 +149,13 @@ font-family: 'Rubik', sans-serif;
 // --- Team profiles ---- 
 
 .article-03 {
-padding-bottom: 2em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     .profile {
         text-align: center;
-        margin-top: 3em;
-        margin-bottom: 6.5em;
+        margin-top: 48px;
+        margin-bottom: 104px;
     }
 
     .profile img {
@@ -176,7 +175,7 @@ padding-bottom: 2em;
 }
 
 .article-04 {
-    margin-top: 7em;
+    margin-top: 72px;
     background-image: linear-gradient( rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.671) ), url('/about-images/e-scooter_street.jpg');
     background-color: rgba(163, 163, 163, 0.931);
     background-position: 0 76%;
@@ -186,8 +185,8 @@ padding-bottom: 2em;
     width: 100%;
     text-align: center;
     color: rgb(68, 68, 68);
-    padding-top: 3.2em;
-    padding-bottom: 5em;
+    padding-top: 51.2px;
+    padding-bottom: 80px;
 
     h3 {
         font-weight: 300;
@@ -250,12 +249,6 @@ padding-bottom: 2em;
     color: white;
 }
 
-/* .join-btn:hover{
-	background-color:rgba(0, 182, 109, 0.356);
-	color: white;
-} */
-
-
 .join-btn:active {
 	position:relative;
 	top:1px;
@@ -288,7 +281,7 @@ padding-bottom: 2em;
         justify-content: center;
         align-items: center;
         margin: 0 auto;  
-        margin-bottom: 6em;   
+        margin-bottom: 20px;   
 
         img {
             margin-left: 10px;
@@ -328,12 +321,12 @@ padding-bottom: 2em;
         
 
         h3 {
-            margin-top: -1.5rem;
-            margin-left:0.51rem;
+            margin-top: -31px;
+            margin-left: 8.16px;
         }
 
         p {
-            margin-top:-1.8rem;
+            margin-top: -28.8px;
             position: absolute;
             top: 35%;
             left: 3%;
@@ -361,7 +354,8 @@ padding-bottom: 2em;
     }
 
     .article-03 h3 {
-        padding-bottom: 2em;
+        margin-top: 20px;
+        padding-bottom: 65px;
     }
 
 }
@@ -386,14 +380,14 @@ padding-bottom: 2em;
     .article-text-02 {
 
         h3 {
-            margin-top: 1rem;
-            margin-left:1rem;
+            margin-top: 16px;
+            margin-left: 16px;
         }
 
         p {
             font-size: 18px;
-            margin-top: -2rem;
-            padding-right: 2.7rem; 
+            margin-top: -32px;
+            padding-right: 43.2px; 
         }
     }
 
