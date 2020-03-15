@@ -14,7 +14,49 @@
                 ), $img
 }
 
+// darken bottom image
+@mixin darken-bottom-image($img) {
+    background: linear-gradient(rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.671)), $img;
+}
+
 // button
+@mixin bottom-btn {
+    display: block;
+    box-shadow: 0 0 1px transparent;
+	margin: 0 auto;
+	margin-top: 50px;
+    text-align: center;
+    border-radius:4px;
+    border: none;
+    background-color: #00b66d;
+    color: white;
+	cursor: pointer;
+	font-size:16px;
+	font-weight:300;
+	padding:15px 24px;
+	text-decoration:none;
+    width: 200px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        border: rgba(0, 182, 109, 0.411) solid 4px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition-duration: .3s;
+        transition-property: top right bottom left;
+    }
+    &:hover:before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+    }
+}
+
+
 @mixin mainButton {
     border: none;
     border-radius:4px;

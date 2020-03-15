@@ -32,19 +32,22 @@
 }
 
 .ride-steps-section {
-    margin: 30px 0;
+    margin: 50px 0;
     // .steps{
     //     padding-right: 10px;
     // }
     .section-title {
         text-align: center;
-        margin-bottom: 30px;
-        h2 {
+        margin-bottom: 50px;
+        h3 {
             margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: 500;
+            color:$brand-color;
         }
         hr {
             width: 70px;
-            border: 2px solid $brand-color;
+            border: 1px solid $brand-color;
         }
     }
 
@@ -127,29 +130,37 @@
 }
 
 .sign-up{
-    @include darken-image(url('../../images/Canva - Black Scooter.jpg'));
+    @include darken-bottom-image(url('../images/black-scooters.jpg'));
     @include parallax-scroll;
-    height: 250px;
+    height: 400px;
     position: relative;
     text-align: center;
-    h3 {
-        color:rgb(255, 255, 255);
-        text-shadow: 2px 2px 8px rgb(0, 0, 0);
-        padding-bottom: 5px;
-        margin-bottom: 0;
+    .sign-up-text {
         width: 95%;
         bottom: 65px;
-        font-size: 1.5em;
-        font-weight: 500;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+
+        h3, h4 {
+            font-weight: 300;
+            color: white;
+        }
+        h3 {
+            font-size: 41px;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 22px;
+        }
     }
-    button, h3 {
+    button, .sign-up-text {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     button {
         bottom: 15px;
-        @include mainButton;
+        @include bottom-btn;
     }
 }
 

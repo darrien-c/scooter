@@ -145,6 +145,11 @@ font-family: 'Rubik', sans-serif;
     }
 }
 
+.article-01-container, .article-text-02 {
+    p{
+        line-height: 35px;
+    }
+}
 
 // --- Team profiles ---- 
 
@@ -235,7 +240,7 @@ font-family: 'Rubik', sans-serif;
 	margin-top: 50px;
     text-align: center;
     border-radius:4px;
-    background-color: rgba(0, 182, 109, 0.739);
+    background-color:#00b66d;
     color: white;
 	cursor: pointer;
 	font-size:16px;
@@ -274,7 +279,7 @@ font-family: 'Rubik', sans-serif;
   }
   
 
-@media(min-width: 750px) {
+@media(min-width: $tabletBreakpoint) {
 
     .article-01-container {
         display: flex;     
@@ -361,7 +366,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-@media (min-width: 950px) {
+@media (min-width: $desktopBreakpoint) {
 
  
     .article-01-container {
