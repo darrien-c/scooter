@@ -279,6 +279,30 @@ font-family: 'Rubik', sans-serif;
 
 @media(min-width: $tabletBreakpoint) {
 
+  .about-container > h3 {
+      margin-top: 50px;
+  }
+
+  .content-container {
+      margin-top: 50px;
+  }
+
+  .article-text-01 {
+
+    p {       
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
+}
+
+
+}
+
+
+@media (min-width: $desktopBreakpoint) {
+
+ 
     .article-01-container {
         display: flex;     
         justify-content: center;
@@ -302,37 +326,7 @@ font-family: 'Rubik', sans-serif;
                 color: black;
             }
         }
-    }
-  
-    // Team section
-    .profile-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .article-03 h3 {
-        margin-top: 20px;
-        padding-bottom: 65px;
-    }
-
-}
-
-
-@media (min-width: $desktopBreakpoint) {
-
- 
-    .article-01-container {
-        img {
-            margin-left: 5px;
-        }
-
-            p {
-                width: 580px;
-                color: black;
-                font-size: 18px;
-            }
-
-    }
+    } 
 
     //section section
 
@@ -380,6 +374,18 @@ font-family: 'Rubik', sans-serif;
             width: 100%;
             height: auto;
         }
+    }
+
+
+    // Team section
+    .profile-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-03 h3 {
+        margin-top: 20px;
+        padding-bottom: 65px;
     }
 
 }
