@@ -10,20 +10,15 @@ font-family: 'Rubik', sans-serif;
     display: block;
     position: relative;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../about-images/e-scooter-stairs.jpg');
-    height: 440px;
+    background: linear-gradient( rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.5)), url('../about-images/e-scooter-stairs.jpg');
+    height: 450px;
     background-size: cover;
-    background-position: 100% -450px;
+    background-position: 100% -220px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
-
-    .nav-bar {
-        background-color: rgba(0, 0, 0, 0);
-    }
 
   
-    h1{
+    .header-title {
         text-align: center;
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
@@ -32,23 +27,19 @@ font-family: 'Rubik', sans-serif;
         margin: 0 auto;
         position: absolute;
         left: 50%;
-        top: 60%;
+        top: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        font-size: 3em;
+        font-size: 48px;
     }
 
-    .header-image {
-        top: 0;
-        width: 100%;
-        display: block;
-        filter: brightness(50%);
-    }
+  
 }
 
 
 
 // Body
+
 .about-wrapper {
     padding: 0;
     margin: 0;
@@ -61,27 +52,26 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-// Articles
-
 .content-container {
     display: flex;
     flex-wrap: wrap;
 }
 
 
-
 .about-container {
     
     h3 {
-        font-size: 1.6em;
+        font-size: 36px;
         font-weight: 500;
         text-align: center;
-        padding: 4em 0;
+        padding-top: 64px;
+        padding-bottom: 64px;
         margin: 0;
         color: #00BE86;
     }
 }
 
+// Articles
 
 .article-01-container {
     height: 100%;
@@ -94,15 +84,15 @@ font-family: 'Rubik', sans-serif;
 .article-text-01 {
     background-color: rgb(6, 6, 8);
     margin-top: -5px;
+
     p {       
         color: white;
         margin: 0;
         font-weight: 300;
-        padding-top: 5.5rem;
-        padding-bottom: 5.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem; 
-       
+        padding-top: 88px;
+        padding-bottom: 88px;
+        padding-left: 20px;
+        padding-right: 20px; 
     }
 }
 
@@ -113,7 +103,6 @@ font-family: 'Rubik', sans-serif;
 .article-text-02  {
     text-align: left;
     display: block;
-
 }
 
  
@@ -139,48 +128,61 @@ font-family: 'Rubik', sans-serif;
 
     h3 {
         color: white;
-        line-height: 2.5rem;
+        line-height: 40px;
         text-align: left;
-        padding-top: 5.5rem;
-        padding-bottom: 2.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-top: 88px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     p {
         font-weight: 300;
-        padding-bottom: 6.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem; 
-       
+        padding-bottom: 104px;
+        padding-left: 20px;
+        padding-right: 20px; 
     }
 }
+
+.article-01-container, .article-text-02 {
+    p{
+        line-height: 35px;
+    }
+}
+
 
 
 // --- Team profiles ---- 
 
 .article-03 {
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     .profile {
         text-align: center;
-        margin-top: 3em;
-        margin-bottom: 6em;
+        margin-top: 48px;
+        margin-bottom: 104px;
     }
 
     .profile img {
        width:  50%;
     }
 
+    h3 {
+        font-size: 36px;
+    }
+
     h4 {
         text-align: center;
         padding: 20px;
         font-weight: 400;
+        font-size: 18px;
     }
 }
 
 .article-04 {
-    margin-top: 7em;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.671) ), url('/about-images/e-scooter_street.jpg');
+    margin-top: 72px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.671) ), url('../about-images/e-scooter_street.jpg');
     background-color: rgba(163, 163, 163, 0.931);
     background-position: 0 76%;
     background-repeat: no-repeat;
@@ -189,16 +191,18 @@ font-family: 'Rubik', sans-serif;
     width: 100%;
     text-align: center;
     color: rgb(68, 68, 68);
-
-    padding-bottom: 45px;
+    padding-top: 51.2px;
+    padding-bottom: 80px;
 
     h3 {
         font-weight: 300;
+        font-size: 41px;
         color: white;
         padding: 55px;
     }
 
     h4 {
+        font-size: 22px;
         padding: 0;
         margin: 0;
         margin-bottom: 5px;
@@ -210,18 +214,15 @@ font-family: 'Rubik', sans-serif;
 
 //Underline
 .underbar {
-    margin-top: 5em;
-    margin-bottom: 5em;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+    margin-top: -60px;
+    padding-bottom: 70px;
 }
 
 .underbar::after {
     border-bottom-width: 0.1px;
-    border-color: rgb(0, 175, 133);
+    border-color: rgba(0, 175, 134, 0.465);
     content: "";
-    width: 80%;
+    width: 80px;
     position: absolute;
     border-style: solid ;
     z-index: 1;
@@ -230,18 +231,21 @@ font-family: 'Rubik', sans-serif;
     left: 0;
 }
 
-// Button
+
+// ---- Button-----
 
 .join-btn {
     display: block;
+    position: relative;
+    box-shadow: 0 0 1px transparent;
 	margin: 0 auto;
 	margin-top: 50px;
     text-align: center;
     border-radius:4px;
-    background-color: rgba(0, 182, 109, 0.445);
+    background-color:#00b66d;
     color: white;
 	cursor: pointer;
-	font-size:15px;
+	font-size:16px;
 	font-weight:300;
 	padding:15px 24px;
 	text-decoration:none;
@@ -252,24 +256,59 @@ font-family: 'Rubik', sans-serif;
     color: white;
 }
 
-.join-btn:hover{
-	background-color:rgba(0, 182, 109, 0.356);
-	color: white;
+
+.join-btn:before {
+    content: '';
+    position: absolute;
+    border: rgba(0, 182, 109, 0.411) solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-duration: .3s;
+    transition-property: top right bottom left;
+  }
+
+  .join-btn:hover:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+  }
+  
+
+@media(min-width: $tabletBreakpoint) {
+
+  .about-container > h3 {
+      margin-top: 50px;
+  }
+
+  .content-container {
+      margin-top: 50px;
+  }
+
+  .article-text-01 {
+
+    p {       
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
 }
 
 
-.join-btn:active {
-	position:relative;
-	top:1px;
 }
 
-@media(min-width: 750px) {
+
+@media (min-width: $desktopBreakpoint) {
+
+ 
     .article-01-container {
         display: flex;     
         justify-content: center;
         align-items: center;
         margin: 0 auto;  
-        margin-bottom: 6em;   
+        margin-bottom: 50px;   
 
         img {
             margin-left: 10px;
@@ -287,15 +326,17 @@ font-family: 'Rubik', sans-serif;
                 color: black;
             }
         }
-    }
-  
+    } 
+
+    //section section
+
     .article-02-bg {
         display:flex;
         flex-direction: row-reverse;
         background-color: transparent;
         justify-content: center;
         width: 100%;   
-        margin-top: 50px;
+        margin-top: 70px;
      }
 
      .article-text-02 {
@@ -309,12 +350,12 @@ font-family: 'Rubik', sans-serif;
         
 
         h3 {
-            margin-top: -1.5rem;
-            margin-left:0.51rem;
+            margin-top: 45px;
+            margin-left: 8.16px;
         }
 
         p {
-            margin-top:-1.8rem;
+            margin-top: -28.8px;
             position: absolute;
             top: 35%;
             left: 3%;
@@ -336,42 +377,15 @@ font-family: 'Rubik', sans-serif;
     }
 
 
+    // Team section
     .profile-container {
         display: flex;
         justify-content: center;
     }
 
+    .article-03 h3 {
+        margin-top: 20px;
+        padding-bottom: 65px;
+    }
+
 }
-
-
-@media (min-width: 950px) {
-
- 
-    .article-01-container {
-        img {
-            margin-left: 5px;
-        }
-
-            p {
-                width: 580px;
-                color: black;
-                font-size: 18px;
-            }
-
-    }
-
-    .article-text-02 {
-
-        h3 {
-            margin-top: 5rem;
-            margin-left:1rem;
-        }
-
-        p {
-            font-size: 18px;
-            margin-top: 0.5rem;
-            padding-right: 2.7rem; 
-        }
-    }
-
- }
