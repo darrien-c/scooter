@@ -39,6 +39,7 @@ font-family: 'Rubik', sans-serif;
 
 
 // Body
+
 .about-wrapper {
     padding: 0;
     margin: 0;
@@ -51,13 +52,10 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-// Articles
-
 .content-container {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 
 .about-container {
@@ -73,6 +71,7 @@ font-family: 'Rubik', sans-serif;
     }
 }
 
+// Articles
 
 .article-01-container {
     height: 100%;
@@ -150,6 +149,8 @@ font-family: 'Rubik', sans-serif;
         line-height: 35px;
     }
 }
+
+
 
 // --- Team profiles ---- 
 
@@ -230,7 +231,8 @@ font-family: 'Rubik', sans-serif;
     left: 0;
 }
 
-// Button
+
+// ---- Button-----
 
 .join-btn {
     display: block;
@@ -254,10 +256,6 @@ font-family: 'Rubik', sans-serif;
     color: white;
 }
 
-.join-btn:active {
-	position:relative;
-	top:1px;
-}
 
 .join-btn:before {
     content: '';
@@ -306,53 +304,7 @@ font-family: 'Rubik', sans-serif;
         }
     }
   
-    .article-02-bg {
-        display:flex;
-        flex-direction: row-reverse;
-        background-color: transparent;
-        justify-content: center;
-        width: 100%;   
-        margin-top: 70px;
-     }
-
-     .article-text-02 {
-        background-color: #00B68A;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 4px;
-        width: 95%;
-        position: relative;
-        
-
-        h3 {
-            margin-top: -31px;
-            margin-left: 8.16px;
-        }
-
-        p {
-            margin-top: -28.8px;
-            position: absolute;
-            top: 35%;
-            left: 3%;
-            transform: translate(0, 50%);
-            font-size: 15px;
-        }
-    }
-
-     .article-02 {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-       
-        img {
-            object-fit: fill;
-            width: 100%;
-            height: auto;
-        }
-    }
-
-
+    // Team section
     .profile-container {
         display: flex;
         justify-content: center;
@@ -382,18 +334,52 @@ font-family: 'Rubik', sans-serif;
 
     }
 
-    .article-text-02 {
+    //section section
+
+    .article-02-bg {
+        display:flex;
+        flex-direction: row-reverse;
+        background-color: transparent;
+        justify-content: center;
+        width: 100%;   
+        margin-top: 70px;
+     }
+
+     .article-text-02 {
+        background-color: #00B68A;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+        width: 95%;
+        position: relative;
+        
 
         h3 {
-            margin-top: 16px;
-            margin-left: 16px;
+            margin-top: 45px;
+            margin-left: 8.16px;
         }
 
         p {
-            font-size: 18px;
-            margin-top: -32px;
-            padding-right: 43.2px; 
+            margin-top: -28.8px;
+            position: absolute;
+            top: 35%;
+            left: 3%;
+            transform: translate(0, 50%);
+            font-size: 15px;
         }
     }
 
- }
+     .article-02 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+       
+        img {
+            object-fit: fill;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
