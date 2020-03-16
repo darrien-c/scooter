@@ -11,7 +11,7 @@ font-family: 'Rubik', sans-serif;
     position: relative;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.5)),
-        url("../about-images/e-scooter-stairs.jpg");
+        url("../images/e-scooter-stairs.jpg");
     height: 450px;
     background-size: cover;
     background-position: 100% -220px;
@@ -173,7 +173,7 @@ font-family: 'Rubik', sans-serif;
             rgba(0, 0, 0, 0.609),
             rgba(0, 0, 0, 0.671)
         ),
-        url("../about-images/e-scooter_street.jpg");
+        url("../images/e-scooter_street.jpg");
     background-color: rgba(163, 163, 163, 0.931);
     background-position: 0 76%;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ font-family: 'Rubik', sans-serif;
             top: 35%;
             left: 3%;
             transform: translate(0, 50%);
-            font-size: 15px;
+        
         }
     }
 
