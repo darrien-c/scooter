@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
 
 /* Font Family:
 font-family: 'Rubik', sans-serif;
@@ -10,17 +10,17 @@ font-family: 'Rubik', sans-serif;
     display: block;
     position: relative;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.5)), url('../about-images/e-scooter-stairs.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.5)),
+        url("../about-images/e-scooter-stairs.jpg");
     height: 450px;
     background-size: cover;
     background-position: 100% -220px;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-  
     .header-title {
         text-align: center;
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
@@ -32,11 +32,7 @@ font-family: 'Rubik', sans-serif;
         z-index: 1;
         font-size: 48px;
     }
-
-  
 }
-
-
 
 // Body
 
@@ -44,22 +40,19 @@ font-family: 'Rubik', sans-serif;
     padding: 0;
     margin: 0;
     width: 100%;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
-.about-container{
+.about-container {
     padding: 0;
 }
-
 
 .content-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-
 .about-container {
-    
     h3 {
         font-size: 36px;
         font-weight: 500;
@@ -67,7 +60,7 @@ font-family: 'Rubik', sans-serif;
         padding-top: 64px;
         padding-bottom: 64px;
         margin: 0;
-        color: #00BE86;
+        color: #00be86;
     }
 }
 
@@ -85,43 +78,38 @@ font-family: 'Rubik', sans-serif;
     background-color: rgb(6, 6, 8);
     margin-top: -5px;
 
-    p {       
+    p {
         color: white;
         margin: 0;
         font-weight: 300;
         padding-top: 88px;
         padding-bottom: 88px;
         padding-left: 20px;
-        padding-right: 20px; 
+        padding-right: 20px;
     }
 }
 
-
-
-
 .article-text-01,
-.article-text-02  {
+.article-text-02 {
     text-align: left;
     display: block;
 }
 
- 
-
-.article-02-bg{
+.article-02-bg {
     width: 100%;
 }
 
 .article-02 {
     margin: 0;
     padding: 0;
-    
+
     img {
         width: 100%;
     }
 }
 
 .article-text-02 {
-    background-color: #00B68A;
+    background-color: #00b68a;
     width: 100%;
     color: white;
     margin-top: -5px;
@@ -140,19 +128,18 @@ font-family: 'Rubik', sans-serif;
         font-weight: 300;
         padding-bottom: 104px;
         padding-left: 20px;
-        padding-right: 20px; 
+        padding-right: 20px;
     }
 }
 
-.article-01-container, .article-text-02 {
-    p{
+.article-01-container,
+.article-text-02 {
+    p {
         line-height: 35px;
     }
 }
 
-
-
-// --- Team profiles ---- 
+// --- Team profiles ----
 
 .article-03 {
     padding-top: 32px;
@@ -165,7 +152,7 @@ font-family: 'Rubik', sans-serif;
     }
 
     .profile img {
-       width:  50%;
+        width: 50%;
     }
 
     h3 {
@@ -182,7 +169,11 @@ font-family: 'Rubik', sans-serif;
 
 .article-04 {
     margin-top: 72px;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.671) ), url('../about-images/e-scooter_street.jpg');
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.609),
+            rgba(0, 0, 0, 0.671)
+        ),
+        url("../about-images/e-scooter_street.jpg");
     background-color: rgba(163, 163, 163, 0.931);
     background-position: 0 76%;
     background-repeat: no-repeat;
@@ -211,7 +202,6 @@ font-family: 'Rubik', sans-serif;
     }
 }
 
-
 //Underline
 .underbar {
     margin-top: -60px;
@@ -224,13 +214,12 @@ font-family: 'Rubik', sans-serif;
     content: "";
     width: 80px;
     position: absolute;
-    border-style: solid ;
+    border-style: solid;
     z-index: 1;
     margin: 0 auto;
     right: 0;
     left: 0;
 }
-
 
 // ---- Button-----
 
@@ -238,116 +227,103 @@ font-family: 'Rubik', sans-serif;
     display: block;
     position: relative;
     box-shadow: 0 0 1px transparent;
-	margin: 0 auto;
-	margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
     text-align: center;
-    border-radius:4px;
-    background-color:#00b66d;
+    border-radius: 4px;
+    background-color: #00b66d;
     color: white;
-	cursor: pointer;
-	font-size:16px;
-	font-weight:300;
-	padding:15px 24px;
-	text-decoration:none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 15px 24px;
+    text-decoration: none;
     width: 200px;
 }
 
-.join-btn a{
+.join-btn a {
     color: white;
 }
 
-
 .join-btn:before {
-    content: '';
+    content: "";
     position: absolute;
     border: rgba(0, 182, 109, 0.411) solid 4px;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transition-property: top right bottom left;
-  }
+}
 
-  .join-btn:hover:before {
+.join-btn:hover:before {
     top: -8px;
     right: -8px;
     bottom: -8px;
     left: -8px;
-  }
-  
+}
 
-@media(min-width: $tabletBreakpoint) {
+@media (min-width: $tabletBreakpoint) {
+    .about-container > h3 {
+        margin-top: 50px;
+    }
 
-  .about-container > h3 {
-      margin-top: 50px;
-  }
+    .content-container {
+        margin-top: 50px;
+    }
 
-  .content-container {
-      margin-top: 50px;
-  }
-
-  .article-text-01 {
-
-    p {       
-        padding-top: 120px;
-        padding-bottom: 120px;
-
+    .article-text-01 {
+        p {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     }
 }
 
-
-}
-
-
 @media (min-width: $desktopBreakpoint) {
-
- 
     .article-01-container {
-        display: flex;     
+        display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;  
-        margin-bottom: 50px;   
+        margin: 0 auto;
+        margin-bottom: 50px;
 
         img {
             margin-left: 10px;
             max-width: 570px;
         }
 
-
         .article-text-01 {
             background-color: transparent;
             margin-left: 50px;
-            
 
             p {
                 max-width: 565px;
                 color: black;
             }
         }
-    } 
+    }
 
     //section section
 
     .article-02-bg {
-        display:flex;
+        display: flex;
         flex-direction: row-reverse;
         background-color: transparent;
         justify-content: center;
-        width: 100%;   
+        width: 100%;
         margin-top: 70px;
-     }
+    }
 
-     .article-text-02 {
-        background-color: #00B68A;
+    .article-text-02 {
+        background-color: #00b68a;
         margin: 0;
         align-items: center;
         justify-content: center;
         margin-bottom: 4px;
         width: 95%;
         position: relative;
-        
 
         h3 {
             margin-top: 45px;
@@ -364,18 +340,17 @@ font-family: 'Rubik', sans-serif;
         }
     }
 
-     .article-02 {
+    .article-02 {
         margin: 0;
         padding: 0;
         width: 100%;
-       
+
         img {
             object-fit: fill;
             width: 100%;
             height: auto;
         }
     }
-
 
     // Team section
     .profile-container {
@@ -387,5 +362,4 @@ font-family: 'Rubik', sans-serif;
         margin-top: 20px;
         padding-bottom: 65px;
     }
-
 }
