@@ -7,16 +7,16 @@
 
     .title-header {
         position: absolute;
-        bottom: 35%;
+        bottom: 30%;
         color: white;
         left:5%;
         text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.397);
 
         p {
-            font-size: 5vw;
+            font-size: 24px;
         }
         h2 {
-            font-size: 10vw;
+            font-size: 36px;
             font-weight: 500;
         }
     }
@@ -171,12 +171,6 @@
     }
     .title-page .title-header {
         max-width: 600px;
-        p {
-            font-size: 3vw;
-        }
-        h2 {
-            font-size: 7vw;
-        }
     }
     .sign-up{
         h3 {
