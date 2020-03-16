@@ -13,10 +13,8 @@ font-family: 'Rubik', sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.5)),
         url("../images/e-scooter-stairs.jpg");
     height: 450px;
-    background-size: cover;
-    background-position: 100% -220px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    @include parallax-scroll;
+    // background-position: 100% -220px;
 
     .header-title {
         text-align: center;
@@ -48,6 +46,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 .content-container {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,10 +56,12 @@ font-family: 'Rubik', sans-serif;
         font-size: 36px;
         font-weight: 500;
         text-align: center;
-        padding-top: 64px;
-        padding-bottom: 64px;
-        margin: 0;
+        margin-bottom: 10px;
+        padding-top: 50px;
         color: #00be86;
+    }
+    hr {
+        margin-bottom: 50px;
     }
 }
 
@@ -176,10 +177,8 @@ font-family: 'Rubik', sans-serif;
         ),
         url("../images/e-scooter_street.jpg");
     background-color: rgba(163, 163, 163, 0.931);
+    @include parallax-scroll;
     background-position: 0 76%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     width: 100%;
     text-align: center;
     color: rgb(68, 68, 68);
@@ -204,23 +203,27 @@ font-family: 'Rubik', sans-serif;
 }
 
 //Underline
-.underbar {
-    margin-top: -60px;
-    padding-bottom: 15px;
-}
 
-.underbar::after {
-    border-bottom-width: 0.1px;
-    border-color: rgba(0, 175, 134, 0.465);
-    content: "";
-    width: 80px;
-    position: absolute;
-    border-style: solid;
-    z-index: 1;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
+hr {
+    @include underline;
 }
+// .underbar {
+//     margin-top: -60px;
+//     padding-bottom: 15px;
+// }
+
+// .underbar::after {
+//     border-bottom-width: 0.1px;
+//     border-color: rgba(0, 175, 134, 0.465);
+//     content: "";
+//     width: 80px;
+//     position: absolute;
+//     border-style: solid;
+//     z-index: 1;
+//     margin: 0 auto;
+//     right: 0;
+//     left: 0;
+// }
 
 // ---- Button-----
 
@@ -266,9 +269,9 @@ font-family: 'Rubik', sans-serif;
 }
 
 @media (min-width: $tabletBreakpoint) {
-    .about-container > h3 {
-        margin-top: 50px;
-    }
+    // .about-container > h3 {
+    //     margin-top: 50px;
+    // }
 
     .content-container {
         margin-top: 50px;
@@ -283,6 +286,12 @@ font-family: 'Rubik', sans-serif;
 }
 
 @media (min-width: $desktopBreakpoint) {
+    .header-container, .article-04{
+        background-attachment: fixed;
+    }
+    .header-container {
+        background-position: 100% -220px;
+    }
     .article-01-container {
         display: flex;
         justify-content: center;
