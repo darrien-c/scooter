@@ -1,14 +1,17 @@
 .page-header {
-    padding-top: 140px;
+    padding-top: 100px;
+    margin-bottom: 30px;
     background-color: #fff;
     text-align: center;
     h1 {
         margin-bottom: 0;
-        font-family: "Bellota", sans-serif;
-        font-size: 3em;
-        // color: scale-color($color: $brand-color, $lightness: -70%);
-        color: $off-grey;
+        font-size: 36px;
+        color: $brand-color;
         font-weight: 400;
+    }
+    hr {
+        width: 70px;
+        border: 1px solid $brand-color;
     }
 }
 
@@ -17,7 +20,6 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
-    padding-top: 20px;
 }
 
 .services-description,
@@ -48,7 +50,6 @@
         padding: 0;
         color: white;
         font-size: 3.5em;
-        font-family: "Bellota", sans-serif;
         text-shadow: 3px 3px 2px $off-grey;
         display: flex;
         justify-content: center;
@@ -61,22 +62,20 @@
 }
 
 .plan-details {
-    margin: 10px 0 40px;
+    margin: 10px 0 20px;
     h2,
     p {
         margin: 24px 0;
         padding: 0;
     }
     h2 {
-        color: scale-color($color: $brand-color, $lightness: -70%);
+        color: $off-black;
         font-size: 2.5em;
-        font-family: "Bellota", sans-serif;
         text-transform: uppercase;
     }
     p {
         line-height: 1.8em;
         color: $off-grey;
-        font-family: "Montserrat", "sans-serif";
         font-size: 1.2em;
     }
 }
@@ -89,7 +88,6 @@
     a {
         text-decoration: none;
         color: $brand-color;
-        font-family: "Bellota", sans-serif;
         font-size: 1.8em;
         font-weight: bold;
         display: block;
@@ -116,7 +114,7 @@
     }
 }
 
-@media (min-width: 750px) {
+@media (min-width: $tabletBreakpoint) {
     .plan {
         width: 50%;
         padding-left: 1em;
@@ -129,13 +127,13 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: $desktopBreakpoint) {
     .plan {
         width: 30%;
     }
     .page-header,
     .plans,
     .plan {
-        background-color: #fafafa !important;
+        background-color: #fff !important;
     }
 }

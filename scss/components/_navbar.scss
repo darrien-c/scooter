@@ -4,12 +4,12 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color:#121212;
-    color:white;
+    background-color: #121212;
+    color: white;
     box-shadow: 0 3px 9px -5px rgba(0, 0, 0, 0.363);
     padding: 10px 20px;
     position: absolute;
-    width:100%;
+    width: 100%;
     z-index: 1;
 
     h2 {
@@ -37,21 +37,19 @@ nav {
         margin: 0;
         padding: 0;
         display: none;
-
     }
     .social-media-icons {
         display: none;
         list-style: none;
-
     }
 }
 
-.black-themed {
-    color: black;
-    a {
-        color: black;
-    }
-}
+// .black-themed {
+//     color: black;
+//     a {
+//         color: black;
+//     }
+// }
 
 .burger-icon {
     cursor: pointer;
@@ -62,10 +60,15 @@ nav {
     .burger-icon {
         display: none;
     }
-
+    .black-themed {
+        color: $off-black;
+        a {
+            color: $off-black;
+        }
+    }
     nav {
         background-color: transparent;
-        color:white;
+        color: white;
         box-shadow: none;
         padding: 8px 40px;
 
@@ -74,19 +77,19 @@ nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width:95px;
+            width: 95px;
             li {
                 height: 20px;
                 width: 20px;
-            } 
+            }
         }
         .nav-items {
             display: flex;
             justify-content: space-evenly;
-            width:400px;
+            width: 400px;
         }
         ul a {
-            &:after {    
+            &:after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 0;
                 content: "";
@@ -94,25 +97,24 @@ nav {
                 height: 2px;
                 left: 50%;
                 position: absolute;
-                background:$brand-color;
+                background: $brand-color;
                 transition: width 0.3s ease 0s, left 0.3s ease 0s;
                 width: 0;
-              }
-              &:hover:after { 
-                width: 100%; 
-                left: 0; 
-              }
+            }
+            &:hover:after {
+                width: 100%;
+                left: 0;
+            }
         }
         h2 a {
             font-size: 35px;
             font-style: italic;
         }
         a {
-            color:white;
+            color: white;
             position: relative;
             font-size: 16px;
             font-weight: 500;
         }
-
     }
 }

@@ -19,10 +19,9 @@
         select {
             font-size: 1.4em;
             width: 100%;
-            border: 1px solid $off-grey;
+            border: 1px solid rgb(180, 180, 180);
             border-radius: 10px;
             padding: 0.4em 0 0.4em 0.2em;
-            font-family: "Montserrat", sans-serif;
         }
         input[type="text"]:focus,
         textarea:focus,
@@ -30,14 +29,12 @@
             border-color: $brand-color;
         }
         label {
-            font-family: "Bellota", sans-serif;
             font-size: 1.8em;
             color: $brand-color;
         }
         .radio-options,
         .checkbox-options {
             display: flex;
-            font-family: "Montserrat", sans-serif;
             font-size: 1.2em;
         }
         .radio-option,
@@ -59,7 +56,6 @@
             border: 2px solid $brand-color;
             border-radius: 25px;
             color: $brand-color;
-            font-family: "Bellota", sans-serif;
             font-size: 1.5em;
             font-weight: bold;
             padding: 1em 0;
@@ -70,6 +66,63 @@
             background-color: $brand-color;
             color: white;
             transition: 0.15s ease-in;
+        }
+    }
+}
+
+@media (min-width: $tabletBreakpoint) {
+    .contact-form {
+        .form-input {
+            flex-direction: row;
+            align-items: center;
+            label {
+                font-size: 1.5em;
+                margin-right: 20px;
+                flex: 1;
+            }
+            input,
+            select,
+            textarea {
+                flex: 5;
+            }
+        }
+        .submit {
+            width: 40%;
+        }
+        .radio,
+        .checkbox {
+            label {
+                flex: 0;
+            }
+        }
+        .radio label {
+            margin-right: 40px;
+        }
+        .checkbox label {
+            margin-right: 70px;
+        }
+        .message label {
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (min-width: $desktopBreakpoint) {
+    .contact-form {
+        .form-input {
+            input[type="text"],
+            textarea,
+            select {
+                font-size: 1.1em;
+            }
+        }
+        .submit {
+            width: 30%;
+            input {
+                font-size: 1.2em;
+                font-weight: 400;
+                padding: 0.5em 0;
+            }
         }
     }
 }
