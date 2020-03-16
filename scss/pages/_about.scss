@@ -93,6 +93,7 @@ font-family: 'Rubik', sans-serif;
 .article-text-02 {
     text-align: left;
     display: block;
+    font-size: 18px;
 }
 
 .article-02-bg {
@@ -142,13 +143,13 @@ font-family: 'Rubik', sans-serif;
 // --- Team profiles ----
 
 .article-03 {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
     .profile {
         text-align: center;
-        margin-top: 48px;
-        margin-bottom: 104px;
+        margin-top: 38px;
+        margin-bottom: 15px;
     }
 
     .profile img {
@@ -168,7 +169,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 .article-04 {
-    margin-top: 72px;
+    margin-top: 0;
     background-image: linear-gradient(
             rgba(0, 0, 0, 0.609),
             rgba(0, 0, 0, 0.671)
@@ -205,7 +206,7 @@ font-family: 'Rubik', sans-serif;
 //Underline
 .underbar {
     margin-top: -60px;
-    padding-bottom: 70px;
+    padding-bottom: 15px;
 }
 
 .underbar::after {
@@ -358,8 +359,4 @@ font-family: 'Rubik', sans-serif;
         justify-content: center;
     }
 
-    .article-03 h3 {
-        margin-top: 20px;
-        padding-bottom: 65px;
-    }
 }
